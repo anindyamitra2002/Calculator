@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pos{
+    position: absolute;
+    top: 2%;
+    left: 50vw;
+}
+h6{
+    color: red;
+}
+.container{
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#disp{
+    margin: 2px;
+    width: 46%;
+    border: 2.5px solid rgb(0, 68, 255);
+    height: 37px;
+    justify-content: end;
+    font-size: 22px;
+    border-radius: 8px;
+    text-align: end;
+    padding: 0 2px;
+}
+.keypad{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ui{
+    display: flex;
+    flex-direction: column;
+}
+.scientific{
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    margin: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 18vw;
+}
+.btn{
+    border: 1.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    width: 21%;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5vw;
+    box-shadow: 1.5px 1px 2px black;
+}
+
+#eval{
+    background: rgb(0, 228, 95);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 900;
+    padding: 8px;
+}
+#ac{
+    background: rgb(255, 33, 33);
+    color: rgb(255, 255, 255);
+    font-size: 1.7vw;
+}
+#del{
+    background: rgb(255, 170, 59);
+    color: rgb(255, 255, 255);
+    font-size: 1.7vw;
+}
+td:hover{
+    background: rgba(214, 214, 214, 0.479);
+}
+
+.scientific .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 26vw;
+}
+.scientific .row .btn{
+    background-color: rgb(136, 227, 255);
+    width: 22%;
+    margin: 0 5px;
+}
+@media screen and (max-width: 850px) {
+    .btn{
+        width: 33px;
+        font-size: 13.5px;
+    }
+    .row{
+        width: 154px;
+    }
+    .scientific .row .btn{
+        width: 43px;
+    }
+    .scientific .row{
+        width: 211px;
+    }
+    #disp{
+        width: 381px;
+    }
+    #ac{
+        font-size: 13.5px;
+    }
+    #del{
+        font-size: 13.5px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .keypad{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+    .ui{
+        width: 100%;
+    }
+    .btn{
+        width: 18vw;
+        font-size: 6vw;
+    }
+    .row{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .scientific .row .btn{
+        width: 18vw;
+    }
+    .scientific .row{
+        width: 100%;
+    }
+    #disp{
+        width: 92vw;
+        height: 32px;
+    }
+    #ac{
+        font-size: 7.2vw;
+    }
+    #del{
+        font-size: 7.2vw;
+    }
+}
+@media screen and (max-width: 235px){
+    h2{
+        font-size: 7vw;
+    }
+    h5{
+        font-size: 5vw;
+    }
+    .ui .btn{
+        font-size: 9vw;
+    }
+}
